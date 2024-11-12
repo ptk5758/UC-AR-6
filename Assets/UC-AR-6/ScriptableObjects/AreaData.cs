@@ -5,6 +5,6 @@ using UnityEngine;
 public class AreaData : ScriptableObject
 {
     public string areaName;
-    public Vector2 Location;
+    public Vector2 location;
     public float range;
 }

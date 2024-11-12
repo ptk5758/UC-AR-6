@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6430d2a29b0fc4d5a884bff8341f570a, type: 3}
+  m_Name: BongSuDae
+  m_EditorClassIdentifier: 
+  areaName: "\uCC9C\uB0B4\uBD09\uC218\uB300"
+  location: {x: 35.49484, y: 129.415}
+  range: 10
