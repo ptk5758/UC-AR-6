@@ -7,4 +7,5 @@ public class AreaData : ScriptableObject
     public string areaName;
     public Vector2 location;
     public float range;
+    public GameObject prefab;
 }

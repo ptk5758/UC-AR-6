@@ -17,7 +17,7 @@ public class LocationManager : MonoBehaviour
         // Check if user has location service enabled
         if (!Input.location.isEnabledByUser)
         {
-            Debug.LogError("Location services are not enabled by the user.");
+            // Debug.LogError("Location services are not enabled by the user.");
             yield break;
         }
 
@@ -35,14 +35,14 @@ public class LocationManager : MonoBehaviour
         // If the service didn't initialize in 20 seconds
         if (maxWait <= 0)
         {
-            Debug.LogError("Timed out waiting for location services.");
+            // Debug.LogError("Timed out waiting for location services.");
             yield break;
         }
 
         // If the connection failed
         if (Input.location.status == LocationServiceStatus.Failed)
         {
-            Debug.LogError("Unable to determine device location.");
+            // Debug.LogError("Unable to determine device location.");
             yield break;
         }
         else
@@ -60,7 +60,7 @@ public class LocationManager : MonoBehaviour
 
             // Invoke locationChanged event at every interval
             locationChanged?.Invoke(currentLocation);
-            Debug.Log($"Location Invoked: {currentLocation.latitude},{currentLocation.longitude}");
+            // Debug.Log($"Location Invoked: {currentLocation.latitude},{currentLocation.longitude}");
 
             yield return new WaitForSeconds(0.5f);
         }

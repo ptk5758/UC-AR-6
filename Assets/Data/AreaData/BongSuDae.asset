@@ -15,3 +15,4 @@ MonoBehaviour:
   areaName: "\uCC9C\uB0B4\uBD09\uC218\uB300"
   location: {x: 35.49472, y: 129.415}
   range: 10
+  prefab: {fileID: 1919973608488330906, guid: 0765f4ce1e8244d40980ef5f3e453f97, type: 3}
