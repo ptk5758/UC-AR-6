@@ -13,8 +13,12 @@ public class GameManager : MonoBehaviour
             return;
         AreaData area = AreaManager.currentArea;
         foreach (ARPlane plane in args.added) {
+            Camera mainCamera = Camera.main;
+            Vector3 targetPosition = mainCamera.transform.position;
             actived = Instantiate(area.prefab);
             actived.transform.position = plane.center;
+            targetPosition.y = actived.transform.position.y;  // y축 고정
+            actived.transform.LookAt(targetPosition);
         }
     }
 
