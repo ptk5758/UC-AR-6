@@ -60,7 +60,7 @@ public class LocationManager : MonoBehaviour
 
             // Invoke locationChanged event at every interval
             locationChanged?.Invoke(currentLocation);
-            Debug.Log($"Location Invoked: Lat: {currentLocation.latitude}, Lon: {currentLocation.longitude}");
+            Debug.Log($"Location Invoked: {currentLocation.latitude},{currentLocation.longitude}");
 
             yield return new WaitForSeconds(0.5f);
         }
